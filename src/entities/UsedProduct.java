@@ -26,7 +26,7 @@ public class UsedProduct extends Product {
     }
 
     @Override
-    public String priceTag() {
+    public final String priceTag() {
         StringBuilder sb = new StringBuilder();
         sb.append(super.getName() + " (used) ");
         sb.append("$ " + String.format("%.2f", super.getPrice()) + " ");
